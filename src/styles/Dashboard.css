@@ -1,0 +1,183 @@
+/* Main container for Dashboard */
+.dashboard-container {
+    padding: 24px;
+    margin-left: 250px; /* Account for sidebar width */
+    margin-top: 64px; /* Account for header height */
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  /* Adjust grid layouts for small, medium, and large screens */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  @media (min-width: 768px) {
+    .stats-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .stats-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  .charts-grid {
+    display: grid;
+    gap: 24px;
+  }
+  
+  @media (min-width: 768px) {
+    .charts-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .items-grid {
+    display: grid;
+    gap: 24px;
+  }
+  
+  @media (min-width: 768px) {
+    .items-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  /* Stat Card Styles */
+  .stat-card {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stat-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .stat-label {
+    color: #6b7280;
+    font-size: 0.875rem;
+  }
+  
+  .stat-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 8px;
+  }
+  
+  .stat-details {
+    font-size: 0.75rem;
+    color: #6b7280;
+    margin-top: 4px;
+  }
+  
+  .stat-trend {
+    font-size: 0.875rem;
+    margin-top: 8px;
+  }
+  
+  .stat-trend.positive {
+    color: #16a34a;
+  }
+  
+  .stat-trend.negative {
+    color: #dc2626;
+  }
+  
+  .stat-icon {
+    padding: 12px;
+    border-radius: 8px;
+    color: #ffffff;
+  }
+  
+  /* Chart Card Styles */
+  .chart-card {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chart-title {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .chart-container {
+    height: 300px;
+  }
+  
+  /* Item Card Styles */
+  .items-card {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .items-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .items-title {
+    font-size: 1.125rem;
+    font-weight: bold;
+  }
+  
+  .view-all-btn {
+    font-size: 0.875rem;
+    color: #9333ea;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .view-all-btn:hover {
+    color: #7e22ce;
+  }
+  
+  .items-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    background-color: #f3f4f6;
+    border-radius: 8px;
+  }
+  
+  .item-name {
+    font-weight: 600;
+  }
+  
+  .item-carat,
+  .item-material {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  
+  .item-price {
+    text-align: right;
+  }
+  
+  .item-date {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  
